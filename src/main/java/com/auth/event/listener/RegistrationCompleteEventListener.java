@@ -52,7 +52,7 @@ public class RegistrationCompleteEventListener implements ApplicationListener<Re
         String senderName = "NewsFeed";
 
         Context thymeleafContext = new Context();
-        String mailContent = templateEngine.process("verification-email.html", thymeleafContext);
+        String mailContent = templateEngine.process("../../templates/verification-email.html", thymeleafContext);
         mailContent = mailContent
                         .replaceAll("userName",userVerification.getUser().getName())
                         .replaceAll("url",url)

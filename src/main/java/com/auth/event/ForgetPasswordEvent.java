@@ -18,6 +18,6 @@ public class ForgetPasswordEvent extends ApplicationEvent {
     }
     public String getApplicationUrl(String verificationToken){
        this.verificationToken  = verificationToken;
-       return applicationUrl+"/resetPassword?token="+this.verificationToken;
+       return applicationUrl+"/home/resetPassword?token="+this.verificationToken;
     }
 }

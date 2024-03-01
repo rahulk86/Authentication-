@@ -18,6 +18,6 @@ public class RegistrationCompleteEvent extends ApplicationEvent {
     }
     public String getApplicationUrl(String verificationToken){
        this.verificationToken  = verificationToken;
-       return applicationUrl+"/register/verifyEmail?token="+this.verificationToken;
+       return applicationUrl+"/home/register/verifyEmail?token="+this.verificationToken;
     }
 }
