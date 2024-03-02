@@ -52,7 +52,7 @@ public class ForgetPasswordEventListener implements ApplicationListener<ForgetPa
         String senderName = "NewsFeed";
 
         Context thymeleafContext = new Context();
-        String mailContent = templateEngine.process("../../templates/forgetPassword.html", thymeleafContext);
+        String mailContent = templateEngine.process("forgetPassword.html", thymeleafContext);
         mailContent = mailContent
                         .replaceAll("userName",userForgetPassword.getUser().getName())
                         .replaceAll("url",url);
